@@ -1,9 +1,10 @@
-#JavaScript101
+# JavaScript101
 <p>
 Bienvenido a JavaScript101, una guía para empezar con JavaScript. Este repositorio ofrece conceptos básicos, ejemplos prácticos, explicaciones claras y ejercicios para consolidar tu aprendizaje. Únete a nuestra comunidad colaborativa y comienza tu viaje en el desarrollo web con actualizaciones constantes y recursos adicionales.
 </p>
 
 <h2>Fundamentos de JS</h2>
+
 - ¿Que es?
 - ¿Como funciona?
 - Engines (motores)
@@ -37,6 +38,7 @@ Bienvenido a JavaScript101, una guía para empezar con JavaScript. Este reposito
 - [**Stack**](https://es.stackoverflow.com/)
 
 <h1>Blogs de JavaScript </h1>
+
 - [Javascript Playground](https://playcode.io/)
 - [David Walsh Blog - Home](https://davidwalsh.name/)
 - [JavaScript The Right Way](https://jstherightway.org/)
@@ -90,7 +92,7 @@ JavaScript nació en el apogeo de Internet, cuando las páginas web se limitaban
 
 **En resumen, JavaScript se ha convertido en una herramienta indispensable para el desarrollo web moderno, impulsando la creación de páginas web dinámicas, interactivas y atractivas.**
 
-##**💡Temas para investigar **
+## 💡**Temas para investigar**
 - TI
 - lenguaje de programación ligero, interpretado o compilado justo a tiempo
 - páginas web dinámicas e interactivas
@@ -216,7 +218,7 @@ https://www.youtube.com/watch?v=iz2AI28K2YQ&list=WL&index=10&t=46s
 
 https://www.youtube.com/watch?v=k7g7w57zMCA&list=WL&index=9&t=210s
 
-##**💡Temas para investigar **
+## 💡 **Temas para investigar**
 - lenguaje de bajo nivel
 - Just-In-Time (JIT)
 - lenguajes compilados
