@@ -114,41 +114,41 @@ JavaScript nació en el apogeo de Internet, cuando las páginas web se limitaban
 
 El proceso de interpretación en JavaScript, en el cual se ven involucrados sus motores (V8 en Chrome, SpiderMonkey en Firefox), históricamente traducía línea por línea el código JavaScript y lo convertía en lenguaje de bajo nivel que la computadora pudiera entender y ejecutar. Sin embargo, los motores modernos utilizan una combinación de interpretación y compilación Just-In-Time (JIT). A diferencia de los lenguajes compilados, donde primero se tiene que compilar el código en un archivo ejecutable, en JavaScript este proceso se da en tiempo de ejecución. Los procesos clave involucrados son:
 
-1 **Parsing (Análisis Sintáctico)**:
+1. **Parsing (Análisis Sintáctico)**:
 
-El motor de JavaScript analiza el código JavaScript para entender su sintaxis dividiéndolo en tokens, las unidades básicas del lenguaje, como palabras clave, identificadores, operadores, etc. Una vez separados estos tokens, se utilizan para construir un árbol de sintaxis abstracta (AST, por sus siglas en inglés).
+    El motor de JavaScript analiza el código JavaScript para entender su sintaxis dividiéndolo en tokens, las unidades básicas del lenguaje, como palabras clave, identificadores, operadores, etc. Una vez separados estos tokens, se utilizan para construir un árbol de sintaxis abstracta (AST, por sus siglas en inglés).
 
-2 **Lexical Analysis (Análisis Léxico)**:
+1. **Lexical Analysis (Análisis Léxico)**:
 
-En este paso, el motor de JavaScript clasifica los tokens según su tipo (por ejemplo, si un token es un identificador o un número).
+    En este paso, el motor de JavaScript clasifica los tokens según su tipo (por ejemplo, si un token es un identificador o un número).
 
-3 **Creación del Árbol de Sintaxis Abstracta (AST)**:
+3. **Creación del Árbol de Sintaxis Abstracta (AST)**:
 
-Una vez realizados el análisis léxico y sintáctico, se crea un árbol de sintaxis abstracta (AST) que representa la estructura del código JavaScript. El AST es una representación en forma de árbol que organiza las diferentes partes del código, como expresiones, declaraciones y operadores.
+    Una vez realizados el análisis léxico y sintáctico, se crea un árbol de sintaxis abstracta (AST) que representa la estructura del código JavaScript. El AST es una representación en forma de árbol que organiza las diferentes partes del código, como expresiones, declaraciones y operadores.
 
-4 **Syntax Analysis (Análisis Sintáctico)**:
+4. **Syntax Analysis (Análisis Sintáctico)**:
 
-El motor de JavaScript utiliza el árbol de sintaxis abstracta (AST) para verificar si el código es sintácticamente correcto. Si hay errores, se lanzan excepciones.
+    El motor de JavaScript utiliza el árbol de sintaxis abstracta (AST) para verificar si el código es sintácticamente correcto. Si hay errores, se lanzan excepciones.
 
-5 **Compilación y Optimización (opcional)**:
+5. **Compilación y Optimización (opcional)**:
 
-Algunos motores de JavaScript usan métodos de compilación como Just-In-Time (JIT) para optimizar el código antes de ejecutarlo. Durante la compilación, el código JavaScript puede ser traducido a un lenguaje intermedio más eficiente o directamente a lenguaje de máquina para mejorar aún más su rendimiento.
+    Algunos motores de JavaScript usan métodos de compilación como Just-In-Time (JIT) para optimizar el código antes de ejecutarlo. Durante la compilación, el código JavaScript puede ser traducido a un lenguaje intermedio más eficiente o directamente a lenguaje de máquina para mejorar aún más su rendimiento.
 
-6 **Execution (Ejecución)**:
+6. **Execution (Ejecución)**:
 
-Una vez que el código JavaScript ha sido analizado, compilado (si es necesario) y optimizado, el motor de JavaScript ejecuta el código línea por línea. Durante la ejecución, el motor interpreta las instrucciones del código y realiza las operaciones correspondientes, como asignaciones de variables, llamadas a funciones, operaciones aritméticas, etc.
+    Una vez que el código JavaScript ha sido analizado, compilado (si es necesario) y optimizado, el motor de JavaScript ejecuta el código línea por línea. Durante la ejecución, el motor interpreta las instrucciones del código y realiza las operaciones correspondientes, como asignaciones de variables, llamadas a funciones, operaciones aritméticas, etc.
 
-7 **Gestión del Scope y la Memoria**:
+7. **Gestión del Scope y la Memoria**:
 
-Durante la ejecución, el motor se encarga de gestionar el scope de las variables y la asignación de memoria para los objetos y variables. Esto incluye la creación del scope para las funciones, la resolución de variables y la recolección de basura para liberar la memoria de los objetos que ya no son necesarios.
+    Durante la ejecución, el motor se encarga de gestionar el scope de las variables y la asignación de memoria para los objetos y variables. Esto incluye la creación del scope para las funciones, la resolución de variables y la recolección de basura para liberar la memoria de los objetos que ya no son necesarios.
 
-8 **Garbage Collection (Recolección de Basura)**:
+8. **Garbage Collection (Recolección de Basura)**:
 
-También realiza una tarea de fondo llamada recolección de basura, que elimina objetos que ya no se utilizan para liberar memoria.
+    También realiza una tarea de fondo llamada recolección de basura, que elimina objetos que ya no se utilizan para liberar memoria.
 
-9 **Manejo de Excepciones y Errores**:
+9. **Manejo de Excepciones y Errores**:
 
-El motor de JavaScript también maneja excepciones y errores que pueden ocurrir durante la ejecución del código. Esto incluye la detección de errores de sintaxis, errores de tiempo de ejecución y excepciones lanzadas por el código.
+    El motor de JavaScript también maneja excepciones y errores que pueden ocurrir durante la ejecución del código. Esto incluye la detección de errores de sintaxis, errores de tiempo de ejecución y excepciones lanzadas por el código.
 
 ### **Compilación en JavaScript:**
 
@@ -188,7 +188,7 @@ Históricamente, JavaScript era un lenguaje interpretado, lo que significa que s
     
     Si el motor de JavaScript advierte que una optimización no es válida (por ejemplo, si el tipo de datos esperado cambia), puede “desoptimizar” el código y volver a una versión menos optimizada para garantizar su correcto funcionamiento.
     
-
+---
 ### **Ventajas de la Compilación JIT**
 
 - **Mejora del rendimiento:**
@@ -268,3 +268,37 @@ Los motores modernos utilizan diversas técnicas para optimizar el rendimiento, 
 ### Conclusion:
 
 Los motores de JavaScript juegan un papel fundamental en la ejecución de código JavaScript en navegadores web, entornos de servidor y otras aplicaciones. Su constante evolución y optimización permiten que las experiencias web y las aplicaciones JavaScript sean cada vez más rápidas, dinámicas y seguras.
+
+---
+### Variables y tipos de datos
+
+**1.introduccion**
+
+- **1.1. Introducción a las Variables en JavaScript**
+    - ¿Qué son las variables?
+    - ¿Para qué se utilizan las variables?
+    - Declaración de variables en JavaScript
+    - Palabras clave: `var`, `let` y `const`
+
+- **1.2. Tipos de Datos en JavaScript**
+    - ¿Qué son los tipos de datos?
+    - Tipos de datos primitivos en JavaScript:
+        - Número
+        - Cadena de texto
+        - Booleano
+        - Null
+        - Undefined
+    - Valores especiales: `NaN` y `Infinity`
+    - Tipo de dato `Symbol`
+    - Detección de tipos de datos: `typeof`
+
+**2. Operaciones con Variables y Tipos de Datos**
+- Asignación de valores a variables
+- Operadores aritméticos
+- Operadores relacionales y lógicos
+- Operadores de incremento y decremento
+- Conversión de tipos de datos
+
+**3. Ejemplos Prácticos**
+- Ejemplos de uso de variables y tipos de datos en diferentes escenarios
+- Ejercicios prácticos para afianzar los conocimientos
